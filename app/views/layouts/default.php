@@ -5,17 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <title></title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
     <!-- Bootstrap core CSS -->
     <link href="/fw/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="/fw/public/css/main.css" rel="stylesheet">
 
+    <script language="javascript" src="/fw/public/js/flashphoner.js"></script>
+
+    <!-- <script language="javascript" src="/fw/public/js/streamer.js"></script>
+    <script language="javascript" src="/fw/public/js/player.js"></script> -->
+
+<script>
+var localVideo;
+var stream;
+
+function init(){
+   Flashphoner.init();
+   localVideo = document.getElementById("localVideo");
+}
+
+function stop(){
+  stream.stop();
+}
+
+function start() {
+   Flashphoner.createSession({urlServer: "wss://wcs5-eu.flashphoner.com:8443"}).on(Flashphoner.constants.SESSION_STATUS.ESTABLISHED, function (session) {
+       //session connected, start streaming
+       startStreaming(session);
+   }).on(Flashphoner.constants.SESSION_STATUS.DISCONNECTED, function () {
+       setStatus("DISCONNECTED");
+   }).on(Flashphoner.constants.SESSION_STATUS.FAILED, function () {
+       setStatus("FAILED");
+   });
+}
+
+
+function startStreaming(session) {
+  stream = session.createStream({
+       name: "stream<?php echo $_SESSION['user']['id']; ?>",
+       display: localVideo,
+       cacheLocalResources: true,
+       receiveVideo: false,
+       receiveAudio: false,
+       record: true
+   }).on(Flashphoner.constants.STREAM_STATUS.PUBLISHING, function (publishStream) {
+       setStatus(Flashphoner.constants.STREAM_STATUS.PUBLISHING);
+   }).on(Flashphoner.constants.STREAM_STATUS.UNPUBLISHED, function () {
+       setStatus(Flashphoner.constants.STREAM_STATUS.UNPUBLISHED);
+   }).on(Flashphoner.constants.STREAM_STATUS.FAILED, function () {
+       setStatus(Flashphoner.constants.STREAM_STATUS.FAILED);
+   });
+   stream.publish();
+}
+
+function setStatus(status) {
+   document.getElementById("status").innerHTML = status;
+}
+
+      </script>
+
+
+
+
+<?php if(!empty($_GET['userid'])): ?>
+
+<script>
+ var remoteVideo;
+ var play;
+
+function init(){
+   Flashphoner.init();
+   remoteVideo = document.getElementById("remoteVideo");
+}
+
+function stop(){
+  play.stop();
+}
+
+function start() {
+   Flashphoner.createSession({urlServer: "wss://wcs5-eu.flashphoner.com:8443"}).on(Flashphoner.constants.SESSION_STATUS.ESTABLISHED, function (session) {
+       //session connected, start streaming
+       startPlayback(session);
+   }).on(Flashphoner.constants.SESSION_STATUS.DISCONNECTED, function () {
+       setStatus("DISCONNECTED");
+   }).on(Flashphoner.constants.SESSION_STATUS.FAILED, function () {
+       setStatus("FAILED");
+   });
+}
+
+function startPlayback(session) {
+   play = session.createStream({
+       name: "stream<?php echo $_GET['userid']; ?>",
+       display: remoteVideo,
+       cacheLocalResources: true,
+       receiveVideo: true,
+       receiveAudio: true
+   }).on(Flashphoner.constants.STREAM_STATUS.PLAYING, function (playStream) {
+       setStatus(Flashphoner.constants.STREAM_STATUS.PLAYING);
+   }).on(Flashphoner.constants.STREAM_STATUS.STOPPED, function () {
+       setStatus(Flashphoner.constants.STREAM_STATUS.STOPPED);
+   }).on(Flashphoner.constants.STREAM_STATUS.FAILED, function () {
+       setStatus(Flashphoner.constants.STREAM_STATUS.FAILED);
+   });
+   play.play();
+}
+
+function setStatus(status) {
+   document.getElementById("status").innerHTML = status;
+}
+    </script>
+<?php endif; ?>
+
+
+
+
+
+
     </head>
-
-    <body class="d-flex flex-column h-100">
-
-
+    <body class="d-flex flex-column h-100" onLoad="init()">
 <header>
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">

@@ -56,19 +56,50 @@ echo '';
 <div class="col-sm-8">
 
 
+<div class="card bg-light mb-3">
+  <div class="card-header">Stremer</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text"></p>
+
+
+    <div class="row">
+    <div class="col-sm-8" >
+
+<div id="localVideo" class="img-fluid" style="width:320px; height:240px; background:url('../images/nosignal.gif'); border: 0px double black;"> 
+</div>
+<br>
+<button type="button" class="btn btn-outline-success" onClick="start()">start</button>
+<button type="button" class="btn btn-outline-danger" onClick="stop()">stop</button>
+<p class="card-text"></p>
+<p class="card-text"></p>
+
+    </div>
+    <div class="col-sm-4">
+    <p id="status"></p>
+    </div>
+  </div>
+
+
+  </div>
+</div>
+
+
+
+
+
 <!-- <div class="card bg-dark text-white">
   <img src="../images/maxresdefault.jpg" class="card-img" alt="...">
   <div class="card-img-overlay">
-    <h5 class="card-title">Card title
+    <h5 class="card-title">
     <div class="float-right">
-<img src="../images/edit.png" width="20" height="20" title="Редактировать">
+<img src="../images/edit.png" width="20" height="20" title="Редактировать"> 
 </div>
     </h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text">Last updated 3 mins ago</p>
+
   </div>
 </div> -->
-
+<br>
 
 
 <div class="card text-white bg-secondary mb-3">
