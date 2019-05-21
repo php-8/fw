@@ -54,7 +54,7 @@ class Upload extends AppModel{
 				$query->bindParam(':file_size', $file_size);
 				$query->bindParam(':file_type', $file_type);
 				$query->execute();
-                cropImage($_SERVER['DOCUMENT_ROOT'] . "/fw/public/albom/" . $newfile_name, $_SERVER['DOCUMENT_ROOT'] . "/fw/public/thumb/c_" . $newfile_name, 100, 100);
+                cropImage($_SERVER['DOCUMENT_ROOT'] . "/fw/public/albom/" . $newfile_name, $_SERVER['DOCUMENT_ROOT'] . "/fw/public/thumb/c_" . $newfile_name, 75, 75);
 				
 			}else{									// rename the file if another one exist
                 $new_dir="$desired_dir/".$file_name.time();

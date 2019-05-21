@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 11 2019 г., 10:45
+-- Время создания: Май 21 2019 г., 15:15
 -- Версия сервера: 10.1.37-MariaDB
 -- Версия PHP: 7.3.0
 
@@ -42,23 +42,28 @@ CREATE TABLE `albom` (
 --
 
 INSERT INTO `albom` (`id`, `USER_ID`, `FILE_NAME`, `FILE_SIZE`, `FILE_TYPE`, `TOKEN`) VALUES
-(415, 15, '5cd68490ea9c715575625125cd68490ea9d8.jpg', '392394', 'image/jpeg', ''),
-(416, 11, '5cd684ec876b015575626045cd684ec876bd.jpg', '237858', 'image/jpeg', ''),
-(417, 13, '5cd6872f296c715575631835cd6872f296dc.jpg', '301145', 'image/jpeg', ''),
-(418, 15, '5cd68a22cf82b15575639385cd68a22cf83a.jpg', '56426', 'image/jpeg', ''),
-(419, 15, '5cd68a230267315575639395cd68a230267f.jpg', '55127', 'image/jpeg', ''),
-(420, 15, '5cd68a2314fa715575639395cd68a2314fb4.jpg', '173662', 'image/jpeg', ''),
-(421, 15, '5cd68a233f34915575639395cd68a233f355.jpg', '61977', 'image/jpeg', ''),
-(422, 15, '5cd68a235d9a815575639395cd68a235d9b4.jpg', '52808', 'image/jpeg', ''),
-(423, 15, '5cd68a237384715575639395cd68a2373853.jpg', '103789', 'image/jpeg', ''),
-(424, 19, '5cd68b3d06c4115575642215cd68b3d06c4f.jpg', '191550', 'image/jpeg', ''),
-(425, 19, '5cd68b3d423a515575642215cd68b3d423b2.jpg', '130023', 'image/jpeg', ''),
-(426, 19, '5cd68b3d85a9015575642215cd68b3d85a9b.jpg', '168049', 'image/jpeg', ''),
-(427, 19, '5cd68b3dab2d615575642215cd68b3dab2e2.jpg', '48594', 'image/jpeg', ''),
-(428, 19, '5cd68b3dc93dc15575642215cd68b3dc93e8.jpg', '346401', 'image/jpeg', ''),
-(429, 19, '5cd68b4b3fd4b15575642355cd68b4b3fd58.jpg', '185463', 'image/jpeg', ''),
-(430, 19, '5cd68b4b6b31b15575642355cd68b4b6b328.jpg', '83176', 'image/jpeg', ''),
-(431, 19, '5cd68b4b8f5ca15575642355cd68b4b8f5d6.jpeg', '406675', 'image/jpeg', '');
+(549, 11, '5ce3f842708d215584440985ce3f842708e1.jpg', '37503', 'image/jpeg', ''),
+(550, 12, '5ce3f85b85e0215584441235ce3f85b85e18.jpg', '37503', 'image/jpeg', ''),
+(551, 13, '5ce3f8904ec1f15584441765ce3f8904ec2c.jpg', '191550', 'image/jpeg', ''),
+(552, 14, '5ce3f8b0218dc15584442085ce3f8b0218e9.jpg', '392394', 'image/jpeg', ''),
+(553, 15, '5ce3f8c81e65c15584442325ce3f8c81e66b.jpeg', '406675', 'image/jpeg', ''),
+(554, 16, '5ce3f8ed71b2715584442695ce3f8ed71b38.jpg', '237858', 'image/jpeg', ''),
+(555, 17, '5ce3f90f0786515584443035ce3f90f07877.jpg', '346401', 'image/jpeg', ''),
+(556, 18, '5ce3f9314ef7315584443375ce3f9314ef95.jpg', '200711', 'image/jpeg', ''),
+(557, 18, '5ce3f965270c415584443895ce3f965270d8.jpg', '83176', 'image/jpeg', ''),
+(558, 19, '5ce3f9873dde215584444235ce3f9873ddf2.jpg', '53652', 'image/jpeg', ''),
+(559, 19, '5ce3f9d4d7de915584445005ce3f9d4d7df8.jpg', '191550', 'image/jpeg', ''),
+(560, 19, '5ce3f9d51cc4d15584445015ce3f9d51cc58.jpg', '130023', 'image/jpeg', ''),
+(561, 19, '5ce3f9d54c17315584445015ce3f9d54c180.jpg', '392394', 'image/jpeg', ''),
+(562, 19, '5ce3f9d57384c15584445015ce3f9d573b1c.jpg', '125023', 'image/jpeg', ''),
+(563, 19, '5ce3f9d58a83515584445015ce3f9d58a842.jpg', '346401', 'image/jpeg', ''),
+(564, 19, '5ce3f9d5c518d15584445015ce3f9d5c5199.jpg', '1075158', 'image/jpeg', ''),
+(565, 19, '5ce3f9d68a1da15584445025ce3f9d68a1e6.jpg', '124009', 'image/jpeg', ''),
+(566, 19, '5ce3f9d6ad0f915584445025ce3f9d6ad107.jpg', '139660', 'image/jpeg', ''),
+(567, 19, '5ce3f9d6cbf2015584445025ce3f9d6cbf2c.jpg', '142817', 'image/jpeg', ''),
+(568, 19, '5ce3f9d6ed97115584445025ce3f9d6ed97e.jpg', '371692', 'image/jpeg', ''),
+(569, 19, '5ce3f9d79908015584445035ce3f9d79908d.jpg', '150924', 'image/jpeg', ''),
+(570, 19, '5ce3f9d7b8a0315584445035ce3f9d7b8a10.jpg', '40150', 'image/jpeg', '');
 
 -- --------------------------------------------------------
 
@@ -81,14 +86,15 @@ CREATE TABLE `anketa` (
 
 INSERT INTO `anketa` (`id`, `userid`, `firstname`, `lastname`, `about`, `img`) VALUES
 (10, 0, 'Вася', 'Программер', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, co', ''),
-(17, 11, 'Миша', 'Программист', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, co', '5cd684ec876b015575626045cd684ec876bd.jpg'),
-(18, 15, 'Вася', 'Не Петя', 'Holy guacamole! You should check in on some of those fields below.\r\nAww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of conte', '5cd68a237384715575639395cd68a2373853.jpg'),
-(19, 14, 'Вася', 'Программер', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, co', ''),
-(20, 12, 'Петя', 'Отличница', 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\r\n  ', ''),
-(23, 13, 'Не', 'Петя', 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\r\n  ', '5cd6872f296c715575631835cd6872f296dc.jpg'),
-(24, 16, 'Не', 'Отличница', 'Aww yeah, you successfully read this message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. There are many variations of passages of Lorem Ipsum available, b\r\n\r\n\r\n          ', ''),
-(25, 17, 'Петя', 'Косой', 'If you are going to use a passage of Lorem Ipsum, you need to be sure there.\r\n                ', ''),
-(26, 19, 'Тестовый', 'Пользователь', 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic\r\n        ', '5cd68b4b8f5ca15575642355cd68b4b8f5d6.jpeg');
+(17, 11, 'Миша', 'Программист', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, co', '5ce3f842708d215584440985ce3f842708e1.jpg'),
+(18, 15, 'Вася', 'Не Петя', 'Holy guacamole! You should check in on some of those fields below.\r\nAww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of conte', '5ce3f8c81e65c15584442325ce3f8c81e66b.jpeg'),
+(19, 14, 'Вася', 'Программер', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, co', '5ce3f8b0218dc15584442085ce3f8b0218e9.jpg'),
+(20, 12, 'Петя', 'Отличница', 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\r\n  ', '5ce3f85b85e0215584441235ce3f85b85e18.jpg'),
+(23, 13, 'Не', 'Петя', 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\r\n  ', '5ce3f8904ec1f15584441765ce3f8904ec2c.jpg'),
+(24, 16, 'Не', 'Отличница', 'Aww yeah, you successfully read this message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. There are many variations of passages of Lorem Ipsum available, b\r\n\r\n\r\n          ', '5ce3f8ed71b2715584442695ce3f8ed71b38.jpg'),
+(25, 17, 'Петя', 'Косой', 'If you are going to use a passage of Lorem Ipsum, you need to be sure there.\r\n                ', '5ce3f90f0786515584443035ce3f90f07877.jpg'),
+(26, 19, 'Тестовый', 'Пользователь', 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic\r\n        ', '5ce3f9d7b8a0315584445035ce3f9d7b8a10.jpg'),
+(27, 18, 'Some', 'Thing', 'Description   ', '5ce3f965270c415584443895ce3f965270d8.jpg');
 
 -- --------------------------------------------------------
 
@@ -168,7 +174,9 @@ INSERT INTO `conversation` (`c_id`, `user_one`, `user_two`, `ip`, `thetime`) VAL
 (289, '11', '15', '111', '1557562748'),
 (290, '13', '15', '111', '1557563203'),
 (291, '13', '11', '111', '1557563238'),
-(292, '19', '11', '111', '1557564041');
+(292, '19', '11', '111', '1557564041'),
+(293, '15', '19', '111', '1557567124'),
+(294, '19', '19', '111', '1558444462');
 
 -- --------------------------------------------------------
 
@@ -199,7 +207,18 @@ INSERT INTO `conversation_reply` (`cr_id`, `reply`, `user_id_fk`, `ip`, `thetime
 (627, 'проверка связи', '13', 'userip', '1557563258', '291'),
 (628, 'Привет Петя', '11', 'userip', '1557563294', '291'),
 (629, 'проверка связи', '19', 'userip', '1557564043', '292'),
-(630, '111', '19', 'userip', '1557564051', '292');
+(630, '111', '19', 'userip', '1557564051', '292'),
+(631, 'test', '15', 'userip', '1557564621', '289'),
+(632, 'проверка связи', '15', 'userip', '1557567127', '293'),
+(633, 'НОВОЕ СООБЩЕНИЕ', '15', 'userip', '1557567142', '289'),
+(634, 'Нормально!', '19', 'userip', '1557567213', '293'),
+(635, 'Привет', '19', 'userip', '1557567237', '292'),
+(636, 'проверка связи', '15', 'userip', '1557567285', '290'),
+(637, 'Привет Петя', '15', 'userip', '1557567305', '289'),
+(638, '111', '11', 'userip', '1557567405', '289'),
+(639, 'НОВОЕ СООБЩЕНИЕ', '11', 'userip', '1557567412', '292'),
+(640, 'проверка связи', '11', 'userip', '1557567418', '291'),
+(641, '111', '15', 'userip', '1558438094', '289');
 
 -- --------------------------------------------------------
 
@@ -311,13 +330,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT для таблицы `albom`
 --
 ALTER TABLE `albom`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=432;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=571;
 
 --
 -- AUTO_INCREMENT для таблицы `anketa`
 --
 ALTER TABLE `anketa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT для таблицы `categories`
@@ -329,13 +348,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT для таблицы `conversation`
 --
 ALTER TABLE `conversation`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=293;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=295;
 
 --
 -- AUTO_INCREMENT для таблицы `conversation_reply`
 --
 ALTER TABLE `conversation_reply`
-  MODIFY `cr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=631;
+  MODIFY `cr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=642;
 
 --
 -- AUTO_INCREMENT для таблицы `post`

@@ -7,9 +7,11 @@
         margin: 1px;
     }
     .gallery li {
-        float: left;
+      float: left;
         margin: 0px;
     }
+
+
 </style>
 <div class="container">
   <div class="row">
@@ -51,42 +53,41 @@ echo '';
 
 </div>
 </div>
+<br>
 </div>
+
+
 
 <div class="col-sm-8">
 
-
 <div class="card bg-light mb-3">
-  <div class="card-header">Stremer</div>
+  <div class="card-header">Strem <small id="status"></small></div>
   <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
+    <!-- <h5 class="card-title"></h5>
+    <p class="card-text"></p> -->
 
 
     <div class="row">
     <div class="col-sm-8" >
 
-<div id="localVideo" class="img-fluid" style="width:320px; height:240px; background:url('../images/nosignal.gif'); border: 0px double black;"> 
+<div id="localVideo" class="img-fluid" style="width:420px; height:240px; background:url('../images/nosignal.gif'); border: 0px double black;"> 
 </div>
 <br>
-<button type="button" class="btn btn-outline-success" onClick="start()">start</button>
-<button type="button" class="btn btn-outline-danger" onClick="stop()">stop</button>
+<button type="button" class="btn btn-outline-success btn-sm" onClick="start()">start</button>
+<button type="button" class="btn btn-outline-danger btn-sm" onClick="stop()">stop</button>
 <p class="card-text"></p>
 <p class="card-text"></p>
 
     </div>
     <div class="col-sm-4">
-    <p id="status"></p>
+    <!-- <p id="status"></p> -->
+
+<?php // status($_SESSION['userid'].'_'.'<p id="status"></p>'); ?>
+
     </div>
   </div>
-
-
   </div>
 </div>
-
-
-
-
 
 <!-- <div class="card bg-dark text-white">
   <img src="../images/maxresdefault.jpg" class="card-img" alt="...">
@@ -99,7 +100,7 @@ echo '';
 
   </div>
 </div> -->
-<br>
+
 
 
 <div class="card text-white bg-secondary mb-3">
@@ -218,24 +219,24 @@ if(isset($_POST['save'])) {
 </div>
 </div>
 
-<script type="text/javascript" src="/fw/bootstrap/gridify/jquery/jquery-1.11.1.min.js"></script>
+<!-- <script type="text/javascript" src="/fw/bootstrap/gridify/jquery/jquery-1.11.1.min.js"></script> -->
 <!-- <script type="text/javascript" src="/fw/bootstrap/gridify/jquery/gridify.js"></script> -->
 <script src="/fw/bootstrap/lightbox-gallery-blurred/jquery.lightbox.js"></script>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         $(window).load(function() {
             var options =
             {
                 srcNode: 'img',             // grid items (class, node)
-                margin: '10px',             // margin in pixel, default: 0px
-                width: '104px',             // grid item width in pixel, default: 220px
+                margin: '4px',             // margin in pixel, default: 0px
+                width: '71px',             // grid item width in pixel, default: 220px
                 max_width: '',              // dynamic gird item width if specified, (pixel)
                 resizable: true,            // re-layout if window resize
                 transition: 'all 0.5s ease' // support transition for CSS3, default: all 0.5s ease
             }
             $('.grid').gridify(options);
         });
-    </script> -->
+    </script>
 
 
 

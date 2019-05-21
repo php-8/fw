@@ -65,20 +65,12 @@ echo '';
     </p>
 <br>
 
-
-
-
-
 <form method="get" action="/fw/messages/newmessage">
 <input type="hidden" name="send" value="message">
 <button type="submit" class="btn btn-primary" name="userid" value="<?=$_GET['userid']?>">Сообщение</button>
 </form>
   </div>
 </div>
-
-<br>
-
-
 <!-- <ul class="list-group">
   <li class="list-group-item list-group-item-primary d-flex justify-content-between align-items-center">A simple primary list group item<span class="badge badge-primary badge-pill">12</span></li>
   <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">A simple secondary list group item<span class="badge badge-primary badge-pill">3</span></li>
@@ -92,37 +84,28 @@ echo '';
 <br>
 </div>
 
-
-
-
-
-
-
 <div class="col-sm-8">
-
-
-
 <div class="card bg-light mb-3">
-  <div class="card-header">Player</div>
+  <div class="card-header">Strem <small id="status"></small></div>
   <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
+    <!-- <h5 class="card-title"></h5>
+    <p class="card-text"></p> -->
 
 
     <div class="row">
     <div class="col-sm-8" >
 
-<div id="remoteVideo" class="img-fluid" style="width:320px; height:240px; background:url('../images/nosignal.gif'); border: 0px double black;"> 
+<div id="remoteVideo" class="img-fluid" style="width:420px; height:240px; background:url('../images/nosignal.gif'); border: 0px double black;"> 
 </div>
 <br>
-<button type="button" class="btn btn-outline-success" onClick="start()">start</button>
-<button type="button" class="btn btn-outline-danger" onClick="stop()">stop</button>
+<button type="button" class="btn btn-outline-success btn-sm" onClick="start()">start</button>
+<button type="button" class="btn btn-outline-danger btn-sm" onClick="stop()">stop</button>
 <p class="card-text"></p>
 <p class="card-text"></p>
 
     </div>
     <div class="col-sm-4">
-    <p id="status"></p>
+    <!-- <p id="status"></p> -->
     </div>
   </div>
 
@@ -161,7 +144,7 @@ echo '';
 
 
 
-<br>
+
 
 
 
@@ -340,20 +323,20 @@ if(isset($_POST['save'])) {
 <!-- <script type="text/javascript" src="/fw/bootstrap/gridify/jquery/gridify.js"></script> -->
 <script src="/fw/bootstrap/lightbox-gallery-blurred/jquery.lightbox.js"></script>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         $(window).load(function() {
             var options =
             {
                 srcNode: 'img',             // grid items (class, node)
-                margin: '10px',             // margin in pixel, default: 0px
-                width: '104px',             // grid item width in pixel, default: 220px
+                margin: '4px',             // margin in pixel, default: 0px
+                width: '71px',             // grid item width in pixel, default: 220px
                 max_width: '',              // dynamic gird item width if specified, (pixel)
                 resizable: true,            // re-layout if window resize
                 transition: 'all 0.5s ease' // support transition for CSS3, default: all 0.5s ease
             }
             $('.grid').gridify(options);
         });
-    </script> -->
+    </script>
 
 
 

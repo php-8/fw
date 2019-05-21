@@ -42,6 +42,7 @@
                     '<a href="#" class="lightbox__nav lightbox__nav--prev lightbox__button"></a>' +
                     '<a href="#" class="lightbox__nav lightbox__nav--next lightbox__button"></a>' +
                     '<div href="#" class="lightbox__caption"><p></p></div>' +
+                    '<a href="#" class="lightbox__delete lightbox__button"></a>' +
                     '</div>'
                 );
 
@@ -191,6 +192,12 @@
                 $(plugin.lightbox).on('click', '.lightbox__close', function () {
                     plugin.close();
                     return false;
+                });
+
+                // Close click
+                $(plugin.lightbox).on('click', '.lightbox__delete', function () {
+                    console.log($(plugin.current).attr('href'));
+                return false;
                 });
 
                 $(window).resize(function () {

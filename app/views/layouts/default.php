@@ -6,28 +6,25 @@
     <meta name="description" content="">
     <title></title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
-    <!-- Bootstrap core CSS -->
     <link href="/fw/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="/fw/public/css/main.css" rel="stylesheet">
-
-    <script language="javascript" src="/fw/public/js/flashphoner.js"></script>
-
+    <script language="javascript" src="/fw/public/js/flashphone.js"></script>
     <!-- <script language="javascript" src="/fw/public/js/streamer.js"></script>
     <script language="javascript" src="/fw/public/js/player.js"></script> -->
+    </head>
+    <body class="d-flex flex-column h-100" onLoad="init()">
 
+<?php if(!empty($_SESSION['user']['id'])): ?>
 <script>
 var localVideo;
 var stream;
-
 function init(){
    Flashphoner.init();
    localVideo = document.getElementById("localVideo");
 }
-
 function stop(){
   stream.stop();
 }
-
 function start() {
    Flashphoner.createSession({urlServer: "wss://wcs5-eu.flashphoner.com:8443"}).on(Flashphoner.constants.SESSION_STATUS.ESTABLISHED, function (session) {
        //session connected, start streaming
@@ -38,8 +35,6 @@ function start() {
        setStatus("FAILED");
    });
 }
-
-
 function startStreaming(session) {
   stream = session.createStream({
        name: "stream<?php echo $_SESSION['user']['id']; ?>",
@@ -57,31 +52,24 @@ function startStreaming(session) {
    });
    stream.publish();
 }
-
 function setStatus(status) {
    document.getElementById("status").innerHTML = status;
 }
-
-      </script>
-
-
+</script>
+<?php endif; ?>
 
 
 <?php if(!empty($_GET['userid'])): ?>
-
 <script>
  var remoteVideo;
  var play;
-
 function init(){
    Flashphoner.init();
    remoteVideo = document.getElementById("remoteVideo");
 }
-
 function stop(){
   play.stop();
 }
-
 function start() {
    Flashphoner.createSession({urlServer: "wss://wcs5-eu.flashphoner.com:8443"}).on(Flashphoner.constants.SESSION_STATUS.ESTABLISHED, function (session) {
        //session connected, start streaming
@@ -92,7 +80,6 @@ function start() {
        setStatus("FAILED");
    });
 }
-
 function startPlayback(session) {
    play = session.createStream({
        name: "stream<?php echo $_GET['userid']; ?>",
@@ -109,20 +96,12 @@ function startPlayback(session) {
    });
    play.play();
 }
-
 function setStatus(status) {
    document.getElementById("status").innerHTML = status;
 }
     </script>
 <?php endif; ?>
 
-
-
-
-
-
-    </head>
-    <body class="d-flex flex-column h-100" onLoad="init()">
 <header>
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -184,35 +163,19 @@ function setStatus(status) {
     </div>
   </nav>
 </header>
-
 <br><br><br>
 
 <?=$content?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php //session_destroy(); ?>
 <?php //debug(vendor\core\Db::$countSql) ?>
-
 <?php //debug(vendor\core\Db::$queries) ?>
 
 <div class="container">
 <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+        <img class="mb-2" src="/fw/public/images/bootstrap-solid.svg" alt="" width="24" height="24">
         <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
       </div>
       <div class="col-6 col-md">
@@ -248,24 +211,16 @@ function setStatus(status) {
   </footer>
   </div>
 
-
-
-
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/fw/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-      
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
 
 <?php
 foreach($scripts as $script) {
   echo $script;
 }
 ?>
-
-      
+  
 </body>
 </body>
 </html>

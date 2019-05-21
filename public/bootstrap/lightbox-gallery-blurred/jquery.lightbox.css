@@ -102,3 +102,9 @@ body.blurred > * {
     left: 10px;
     background-image: url("previous.png");
 }
+
+.lightbox__delete {
+    right: 10px;
+    bottom: 10px;
+    background-image: url("close.png");
+}

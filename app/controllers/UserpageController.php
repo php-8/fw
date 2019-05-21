@@ -66,6 +66,12 @@ class  UserpageController extends AppController  {
         //$updateimg = new display;
         $albom->update_user_image($_SESSION['user']['id'], $this->lastfile);
         }
+
+
+        function status($value) {
+            echo $value;
+        }
+
         $this->set(compact('userdata', 'data'));
     }
     
