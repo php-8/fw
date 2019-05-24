@@ -1,0 +1,80 @@
+[2019-05-11 10:15:33] Текст ошибки: Undefined offset: 0 | Файл: C:\xampp\htdocs\fw\app\controllers\MessagesController.php, | Строка: 55
+==========================
+[2019-05-11 10:15:55] Текст ошибки: Undefined offset: 0 | Файл: C:\xampp\htdocs\fw\app\controllers\MessagesController.php, | Строка: 55
+==========================
+[2019-05-11 10:19:02] Текст ошибки: Undefined offset: 0 | Файл: C:\xampp\htdocs\fw\app\controllers\MessagesController.php, | Строка: 55
+==========================
+[2019-05-11 10:19:11] Текст ошибки: Undefined offset: 0 | Файл: C:\xampp\htdocs\fw\app\controllers\MessagesController.php, | Строка: 55
+==========================
+[2019-05-11 10:20:15] Текст ошибки: Undefined offset: 0 | Файл: C:\xampp\htdocs\fw\app\controllers\MessagesController.php, | Строка: 55
+==========================
+[2019-05-11 10:20:22] Текст ошибки: Undefined offset: 0 | Файл: C:\xampp\htdocs\fw\app\controllers\MessagesController.php, | Строка: 55
+==========================
+[2019-05-15 10:35:12] Текст ошибки: Undefined variable: test | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 72
+==========================
+[2019-05-20 06:59:10] Текст ошибки: syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 253
+==========================
+[2019-05-20 18:23:41] Текст ошибки: Access to undeclared static property: Stremer::$status | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 197
+==========================
+[2019-05-20 18:24:30] Текст ошибки: syntax error, unexpected '=' | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 125
+==========================
+[2019-05-20 18:26:08] Текст ошибки: Undefined variable: status | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 197
+==========================
+[2019-05-20 18:26:41] Текст ошибки: Class 'stremer' not found | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 80
+==========================
+[2019-05-20 18:27:41] Текст ошибки: Class 'stremer' not found | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 81
+==========================
+[2019-05-20 18:30:19] Текст ошибки: Class 'stremer' not found | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 81
+==========================
+[2019-05-20 18:30:49] Текст ошибки: Class 'Stremer' not found | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 81
+==========================
+[2019-05-20 18:32:15] Текст ошибки: Class 'Stremer' not found | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 81
+==========================
+[2019-05-20 18:33:28] Текст ошибки: Class 'Stremer' not found | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 81
+==========================
+[2019-05-20 18:42:10] Текст ошибки: Call to undefined function test() | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 81
+==========================
+[2019-05-20 18:43:09] Текст ошибки: Call to undefined function test() | Файл: C:\xampp\htdocs\fw\app\controllers\UserpageController.php, | Строка: 73
+==========================
+[2019-05-20 18:52:12] Текст ошибки: Call to undefined function status() | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 81
+==========================
+[2019-05-21 06:41:34] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 45
+==========================
+[2019-05-21 06:41:39] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 45
+==========================
+[2019-05-21 06:41:44] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 45
+==========================
+[2019-05-21 06:42:36] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 45
+==========================
+[2019-05-21 06:42:39] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 45
+==========================
+[2019-05-21 06:42:40] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 45
+==========================
+[2019-05-21 06:42:53] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 45
+==========================
+[2019-05-21 06:42:59] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 45
+==========================
+[2019-05-21 13:33:49] Текст ошибки: session_start(): A session had already been started - ignoring | Файл: C:\xampp\htdocs\fw\app\views\layouts\default.php, | Строка: 1
+==========================
+[2019-05-21 15:04:45] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\controllers\UserpageController.php, | Строка: 46
+==========================
+[2019-05-22 07:46:47] Текст ошибки: Undefined variable: errors | Файл: C:\xampp\htdocs\fw\app\models\login.php, | Строка: 47
+==========================
+[2019-05-22 07:50:39] Текст ошибки: Undefined variable: errors | Файл: C:\xampp\htdocs\fw\app\models\login.php, | Строка: 47
+==========================
+[2019-05-22 07:52:45] Текст ошибки: syntax error, unexpected '?>' | Файл: C:\xampp\htdocs\fw\app\views\Main\index.php, | Строка: 25
+==========================
+[2019-05-22 08:03:41] Текст ошибки: Cannot use isset() on the result of an expression (you can use "null !== expression" instead) | Файл: C:\xampp\htdocs\fw\app\views\Main\index.php, | Строка: 87
+==========================
+[2019-05-22 08:28:33] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'useruseruser' for key 'login' | Файл: C:\xampp\htdocs\fw\app\models\login.php, | Строка: 137
+==========================
+[2019-05-22 11:22:42] Текст ошибки: Undefined index: gender | Файл: C:\xampp\htdocs\fw\app\controllers\UserpageController.php, | Строка: 46
+==========================
+[2019-05-22 11:23:55] Текст ошибки: Undefined index: gender | Файл: C:\xampp\htdocs\fw\app\controllers\UserpageController.php, | Строка: 46
+==========================
+[2019-05-22 11:27:16] Текст ошибки: Undefined index: gender | Файл: C:\xampp\htdocs\fw\app\controllers\UserpageController.php, | Строка: 46
+==========================
+[2019-05-22 15:57:51] Текст ошибки: Undefined variable: photo | Файл: C:\xampp\htdocs\fw\app\views\Userpage\Index.php, | Строка: 150
+==========================
+[2019-05-23 10:01:26] Текст ошибки: Undefined index: user | Файл: C:\xampp\htdocs\fw\app\controllers\MessagesController.php, | Строка: 16
+==========================
